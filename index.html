@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="favicon.png"/>
+  <!-- <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"> -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>D. Polyakov</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="/" class="brand">Dmitry Polyakov</a>
+      <!-- Tab links -->
+      <nav class="tabNav" id="myTabNav">
+        <a class="tablinks active" data-block="project" id="defaultOpen">project</a>
+        <a class="tablinks" data-block="cv">cv</a>
+        <a class="tablinks" data-block="contacts">contacts</a>
+      </nav>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a class="icon">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Tab content -->
+    <section id="project" class="tabcontent">
+      <h2>List of Projects:</h2>
+
+      <h3>HTML, CSS, SCSS</h3>
+      <a target="_blank" href="https://putnic.github.io/edu_portfolio">Responsive educational site</a>
+      
+      <h3>JavaScript.</h3>
+      
+      <h4>
+        <a  target="_blank" href="https://putnic.github.io/experiments-with-graphics/">
+          Experiments with graphics
+        </a>
+      </h4>
+
+      <h3>Node.js, Expressjs.</h3>
+      
+      <h4>Training project on Express</h4>
+      <p>Implemented the following functions <strong>CRUD</strong> on database <strong>PostgreSQL</strong>:</p>
+      <ul>
+        <li>Create item</li>
+        <li>Update item</li>
+        <li>Delete item</li>
+      </ul>
+      <a target="_blank" href="https://sleepy-waters-93897.herokuapp.com/">Todo list</a>
+
+      <h3>Node.js, Expressjs., React.js, Redux.js</h3>
+      <h4>Training project: Task tracker</h4>
+      <p>Implemented functions <strong>CRUD</strong> on the database <strong>MongoDB</strong></p>
+      <ul>
+        <li>The application is a Single Page Application on the front part. Server - Express.js.</li>
+        <li>Authorization is implemented, only authorized users can work with their list of tasks.</li>
+      </ul>
+      <a target="_blank" href="https://pure-plains-24385.herokuapp.com/">Task tracker</a>
+
+      <h3>Python, Django.</h3>
+      <a target="_blank" href="https://putnic.pythonanywhere.com/">Educational Django blog</a>
+
+    </section>
+
+    <section id="cv" class="tabcontent">
+      <h2>This page is under construction</h2>
+      <p>Sorry for the inconvenience.</p>
+      <!-- Auto width -->
+      <!-- <button class="btn"><i class="fa fa-download"></i> Download</button> -->
+
+      <!-- Full width -->
+      <!-- <button class="btn" style="width:100%">
+        <i class="fa fa-download"></i> Download
+      </button> -->
+
+      <!-- <a id="myAnchor" href="/images/myw3schoolsimage.jpg" download="w3logo">
+        <img border="0" src="/images/myw3schoolsimage.jpg" alt="W3Schools" width="104" height="142">
+      </a> -->
+    </section>
+
+    <section id="contacts" class="tabcontent">
+      <h2>Сontacts</h2>
+      <ul class="contact">
+        <li><span>phone:</span> +7(917)444-4538</li>
+        <li><span>mail:</span> dimitriypolyakov@gmail.com</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>Content © {} Dmitry Polyakov</span>
+  </footer>
+
+  <script src="main.js" defer></script>
+  <script>
+    window.onload = () => {
+      let footerDate = (new Date()).getFullYear();
+      let footerSpan = document.querySelector('footer span');
+      footerSpan.textContent = footerSpan.textContent.replace('{}', footerDate);
+    }
+  </script/>
+</body>
+
+</html>
